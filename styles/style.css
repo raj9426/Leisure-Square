@@ -1,0 +1,748 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=David+Libre:wght@400;500;700&family=Inter:wght@200;300;400;500;600;700&family=Rock+Salt&family=Rubik+Distressed&family=Sonsie+One&family=Work+Sans:ital,wght@0,400;0,500;0,700;0,800;1,300;1,400&display=swap');
+:root{
+    --std_clr:#F49B3F;
+    --card-clr:#e6e4e4b6;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+li, a{
+    text-decoration: none;
+    list-style: none;
+}
+/*--------- Navigation-Bar Design Start ------------*/
+header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    width: 50%;
+    
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    margin: auto;
+    background-color: white;
+    
+}
+nav ul li a{
+    font-family: 'Inter';
+    color: black;
+}
+.logo a{
+    font-family: 'Sonsie One', cursive;
+    color: #000;
+    font-size: 20px;
+}
+.header-wrapper{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+}
+.login{
+    background-color: var(--std_clr);
+    color: white;
+    padding: 10px 35px !important;
+    border-radius: 50px !important;
+    cursor: pointer;
+}
+.login a{
+    font-family: 'Inter';
+    color: white;
+}
+.ham-burger{
+    display: none;
+}
+.ham-burger div{
+    margin: 5px;
+    width: 25px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: black;
+    transition: 0.5s ease-in-out;
+}
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+
+}
+
+/*--------- Navigation-Bar Design END ------------*/
+
+main{
+    width: 100%;
+}
+
+
+
+/* =================================================== 
+   -------------👇HERO SECTION STARTS HERE👇---------- 
+   ===================================================   */
+
+
+.section{
+    padding-top: 5rem;
+}
+.section-hero{
+    width: 85%;
+    margin: auto;
+}
+.section-hero-image{
+    width: 450px;
+    border-radius: 20px;
+    padding: 5px;
+    overflow: hidden;
+}
+.hero-img:hover{
+    transform: scale(1.05);
+}
+.section-hero-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    font-family: 'Work Sans', sans-serif;
+
+    width: 40%;
+}
+.hero-heading{
+    font-size: 50px;
+}
+.hero-para{
+    font-size: 18px;
+}
+.hero-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    transition: .5s;
+
+
+}
+.hero-btns{
+    display: flex;
+    gap: 20px;
+}
+.btn{
+    background-color: var(--std_clr);
+    border: 1.8px solid var(--std_clr);
+    font-size: 18px;
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-weight: 500;
+    color: white;
+}
+.order-btn{
+    background-color: #ffe1d0;
+    border-style: double;
+    color: var(--std_clr);
+}
+.grid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* ==================================================
+   ----------👆HERO SECTION ENDS HERE👆--------------
+   ================================================== */
+
+
+/*====================================================
+-------------👇Categories SECTION STARTS HERE👇--------
+=====================================================*/
+
+.categories-section{
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Work Sans', sans-serif;
+    padding: 100px 0;
+
+}
+
+.categories-container{
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+    width: 85%;
+    color: aliceblue;
+    margin-top: 50px;
+    flex: 1 0 50%;
+}
+
+.categories-container::-webkit-scrollbar{
+    display: none;
+}
+
+.category{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: black;
+    align-items: center;
+    width: 240px;
+    height: 250px;
+    font-family: 'DM Sans', sans-serif;
+    gap: 10px;
+    background-color: var(--card-clr);
+    padding:40px 10px;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+.h2{
+    font-size: 50px;
+    text-decoration: underline;
+    text-decoration-color: var(--std_clr);
+}
+.category p{
+    font-weight: 100px;
+    opacity: 0.6;
+}
+.category:hover{
+    background-color: var(--std_clr);
+    color: white;
+}
+
+/* =====================================================
+-------------👆Categories SECTION ENDS HERE👆----------
+=====================================================  */
+
+
+/* =====================================================
+-------------👇BEST SELLING SECTION STARTS HERE👇----
+===================================================== */
+
+ 
+.top-selling-section{
+    font-family: 'Work Sans', sans-serif;
+    width: 100%;
+    padding: 100px 0;    
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.h2-cont{
+    width: 85%;
+    text-align: center;
+}
+.top-selling-container{
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.dish{
+    max-width:400px;
+    height:180px;
+    display: flex;
+    gap: 35px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: var(--card-clr);
+}
+.dish-img{
+    width: 50%;
+    height: 100%;
+}
+.dish-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+
+}
+.dish-info{
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+/*=====================================================
+-------------👆BEST SELLING SECTION ENDS HERE👆------
+=====================================================  */
+
+
+/* =====================================================
+-------------👇TESTIMONIALS SECTION STARTS HERE👇----------
+=====================================================  */
+
+
+  .swiper {
+    width: 85%;
+    height: 100%;
+    border-radius: 40px;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: var(--card-clr);
+    height: 400px;
+    gap: 20px;
+    width: 50%;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    gap: 10px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+.swiper-slide p{
+    width: 50%;
+    font-size:16px ;
+}
+
+.swiper-button-next,.swiper-button-prev{
+    color: var(--std_clr);
+    font-size: 90px;
+    height: 50px;
+    width: 50px;
+    background-color: rgba(255, 255, 255, 0.669);
+    border-radius: 50%;
+}
+.arrow::after{
+    font-size: 20px;
+    font-weight: 700;
+}
+.swiper span{
+    font-weight: 700;
+    font-size: 25px;
+}
+.testimonial{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.h2{
+    font-family: 'Work Sans', sans-serif;
+}
+/* =====================================================
+-------------👆TESTIMONIAL SECTION ENDS HERE👆-------
+=====================================================  */
+
+/* <!--=====================================================
+-------------FOOTER SECTION STARTS HERE----------
+===================================================== --> */
+
+.footer{
+    margin-top: 20px;
+    font-family: 'Work Sans', sans-serif;
+    width: 100%;
+    background-color: rgb(71, 69, 69);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+.footer-wrapper{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 30px;
+    padding: 40px 0;
+    position: relative;
+}
+.foot-connect{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    text-align: left;
+}
+.foot-links-connect a{
+    color: white;
+}
+.foot-connect ul{
+    display: flex;
+    margin-top: 12px;
+    gap: 5px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+
+}
+.foot-links-connect{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: baseline;
+}
+.footer .h2{
+    font-size: 40px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+
+.foot-links ul{
+    margin-top: 12px;
+    height: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-start;
+}
+.rights{
+    font-size: 11px;
+    text-align: center;
+}
+.foot-location{
+    width: 100%;
+}
+.foot-links-connect ul li a:hover{
+    color: var(--std_clr);
+}
+/* <!--=====================================================
+-------------FOOTER SECTION ENDS HERE👆----------
+===================================================== --> */
+
+/*---------Break-points Design Start ------------*/
+
+
+@media screen and (max-width:1024px ) {
+    nav{
+        width: 100%;
+    }
+
+    .section-hero-image{
+        width: 350px;
+        height: auto;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .hero-heading{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width:936px) {
+    .btn{
+        font-size: 15px;
+        padding: 9px 14px;
+
+    }
+    .hero-heading{
+        font-size: 35px;
+    }
+    .footer .h2{
+        font-size: 30px;
+    }
+    .foot-location p{
+        font-size: 13px;
+    }
+    .footer ul{
+        font-size: 13px;
+    }
+
+}
+@media screen and (max-width:720px) {
+  
+    .nav-links{
+        position: absolute;
+        flex-direction: column;
+        min-width: 100%;
+        letter-spacing: 2px;
+        top: 70px;
+        right: 0;
+        height: 90vh;
+        clip-path: circle(100px at 90% -100%);
+        -webkit-clip-path:circle(100px at 90% -100%);
+        transition: all 1s ease-in-out;
+    }
+    .ham-burger{
+        display: block;
+    }
+    .nav-active{
+        clip-path: circle(1500px at 90% -20%);
+        -webkit-clip-path:circle(1500px at 90% -20%);
+    }
+    .logo a{
+        font-size:19px;
+    }
+
+    .grid{
+        flex-direction: column-reverse;
+        gap: 10px;
+
+    }
+    .section-hero-data{
+        width: 85%;
+    }
+    .hero-para{
+        font-size: 18px;
+    }
+    
+    .section{
+        padding-top: 2rem;
+    }
+    
+    .section-hero-image{
+        width: 85%;
+    }  
+    .h2{
+        
+        font-size: 40px;
+    }
+    .footer-wrapper{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:979px) {
+    .top-selling-section{
+        flex-direction: column;
+    }
+    .dish{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: black;
+    align-items: center;
+    width: 90%;
+    height: 350px;
+    font-family: 'DM Sans', sans-serif;
+    gap: 10px;
+    border-radius: 15px;
+    transition: 0.5s;
+
+    }
+    .dish-img{
+        width: 100%;
+        height: 200px;
+    }
+    .dish-info{
+        width: 100%;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        align-items: flex-start;
+    }
+    .dish-info p{
+        opacity: 0.8;
+    }
+    
+}
+
+@media screen and (max-width:378px) {
+    .section-hero-image{
+        width: 90%;
+    }   
+    .section{
+        padding-top: 0rem;
+    }
+    .hero-heading{
+        font-size: 28px;
+    }
+    .hero-para{
+        font-size: 16px;
+    }
+    .hero-btns{
+        justify-content: space-between;
+    }
+    .h2{
+        font-size: 28px;
+    }
+    .foot-location .h2{
+        font-size: 25px;
+    }
+    .foot-links-connect{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:326px) {
+    .btn{
+        font-size: 13px;
+        padding: 8px 10px;
+        text-align: center;
+        width: 80%;
+    }
+    .hero-btns{
+        flex-direction: column;
+        align-items: center;
+    }
+    .foot-location .h2{
+        font-size: 20px;
+    }
+    .foot-links-connect ul{
+        font-size: 11px;
+    }
+    
+    
+}
+
+
+
+/* ==================================================
+----------------------Gallery Design-----------------
+===================================================== */
+
+.gallery-cont{
+    text-align: center;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.section-gallery{
+    width: 85%;
+    /* z-index: -1; */
+    /* padding: 100px; */
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-auto-rows: 100px 300px;
+    grid-gap: 10px;
+    grid-auto-flow: dense;
+}
+.gallery-item{
+    width: 100%;
+    height: 100%;
+    /* position: relative; */
+}
+.gallery-item .img-con{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.gallery-item .img-con img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+.gallery-item:hover .img-con img{
+    transform: scale(1.5);
+}
+.w-1{
+    grid-column: span 1;
+}
+.w-2{
+    grid-column: span 2;
+}
+.w-3{
+    grid-column: span 3;
+}
+.w-4{
+    grid-column: span 4;
+}
+.w-5{
+    grid-column: span 5;
+}
+.w-6{
+    grid-column: span 6;
+}
+
+.h-2{
+    grid-row: span 2;
+}
+.h-3{
+    grid-row: span 3;
+}
+.h-4{
+    grid-row: span 4;
+}
+.h-5{
+    grid-row: span 5;
+}
+.h-6{
+    grid-row: span 6;
+}
+h2{
+    margin-top: 50px;
+    font-size: 60px;
+    text-decoration: underline;
+    text-decoration-color: #F49B3F;
+    font-family: 'Work Sans', sans-serif;
+}
+@media screen and (max-width:720px){
+    .section-gallery{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .w-1,.w-2,.w-3,.w-4,.w-5,.w-6{
+        grid-column: span 3;
+    }
+}
+@media screen and (max-width:500px){
+    .section-gallery{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .w-1,.w-2,.w-3,.w-4,.w-5,.w-6{
+        grid-column: span 1;
+    }
+}
+
+/*---------Break-points Design END ------------*/
