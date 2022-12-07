@@ -204,7 +204,7 @@ main{
     overflow-x: scroll;
     scroll-behavior: smooth;
     align-items: center;
-    justify-content: left;
+    justify-content: space-between;
     gap: 10px;
     width: 85%;
     color: aliceblue;
