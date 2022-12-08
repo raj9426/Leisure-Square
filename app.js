@@ -35,3 +35,25 @@ var swiper = new Swiper(".mySwiper", {
     },
   });
 
+const xmark = document.querySelector(".fa-xmark");
+const container = document.querySelector(".contact-container")
+const contact = document.querySelector(".contact");
+const body = document.querySelector("body")
+const foot_contact = document.querySelector(".foot-contact")
+contact.addEventListener('click', ()=>{
+    container.classList.toggle("open-contact")
+    container.classList.remove("close-contact")
+    body.classList.toggle("body")
+})
+foot_contact.addEventListener('click', ()=>{
+    container.classList.toggle("open-contact")
+    container.classList.remove("close-contact")
+    body.classList.toggle("body")
+})
+xmark.addEventListener('click', ()=>{
+    container.classList.toggle("close-contact");
+    container.classList.remove("open-contact");
+    body.classList.remove("body");
+
+})
+

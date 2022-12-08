@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" type="image/x-icon" href="./assets/favicon.jpeg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
     <title>Leisure Square</title>
 </head>
 <body>
@@ -20,7 +22,7 @@
                     <li><a href="./gallery.html">Gallery</a></li>
                     <li><a href="#">Menu</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#" class="contact">Contact</a></li>
                     <li class="login"><a href="#">LogIn</a></li>
                 </ul>
             </nav>
@@ -270,7 +272,7 @@
                     <li><a href="#">Gallery</a></li>
                     <li><a href="#">Menu</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#"  class="foot-contact">Contact</a></li>
                 </ul>
             </div>
             <div class="foot-connect">
@@ -292,6 +294,37 @@
 <!--=====================================================
 -------------FOOTER SECTION ENDS HERE👆----------
 ===================================================== -->
+
+<section class="contact-container">
+    <form action="https://formspree.io/f/mpznvjob" method="POST">
+        <div class="message-icon">
+            <div class="message-icon-holder">
+                <i class="bi bi-telegram"></i>
+                <span>message</span>
+            </div>
+            <a href="#"><i class="fa-solid fa-xmark"></i></a>
+        </div>
+        <div id="input-field">
+            <!-- <i class="bi bi-person"></i> -->
+            <input type="text" placeholder="Name" name="Name" id="">
+        </div>
+        <div id="input-field">
+            <!-- <i class="bi bi-telephone"></i> -->
+            <input type="text" placeholder="Phone no." name="Phone" id="">
+        </div>
+        <div id="input-field">
+            <!-- <i class="fa-regular fa-envelope"></i> -->
+            <input type="text" placeholder="Email Address" name="Email" id="">
+        </div>
+        <div id="input-field">
+            <!-- <i class="bi bi-chat-right-dots"></i> -->
+            <textarea name="Message" placeholder="Message" id="" rows="5"></textarea>
+        </div>
+        <input type="submit" value="Submit" class="send-btn" name="" id="">
+
+    </form>
+</section>
+
     <script src="./app.js"></script>
 
     

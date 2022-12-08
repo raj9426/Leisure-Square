@@ -470,6 +470,111 @@ main{
 -------------FOOTER SECTION ENDS HERE👆----------
 ===================================================== --> */
 
+
+/* ================================================
+----------------contact-form--------------------
+================================================ */
+.contact-container{
+    background: rgba(0, 0, 0, 0.596);
+
+    backdrop-filter: blur(1.5px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110vh;
+    /* display: flex; */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: var(--std_clr);
+    font-family: 'Work Sans', sans-serif;
+    /* display: none; */
+
+}
+form{
+    position: absolute;
+    /* top: 10vh; */
+    left: 25wh;
+    /* height: 90vh; */
+    background-color: rgb(244, 240, 240);
+    min-width: 50%;
+    padding: 30px;
+    font-size: 18px;
+    
+    border-radius: 20px;
+}
+.message-icon{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.message-icon-holder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+i{
+    font-size: 20px;
+    font-weight: 700;
+}
+.message-icon i{
+    font-size: 40px;
+}
+.message-icon span{
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+form input, textarea{
+    padding: 10px;
+    width: 100%;
+    border-radius: 2px;
+    border: 1px solid #000;
+    outline: none;
+
+}
+.contact-container a{
+    color: #F49B3F;
+}
+#input-field{
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+
+}
+input, textarea{
+    background-color: rgb(234, 229, 229);
+}
+#input--field i{
+    font-size: 22px;
+    margin-right: 15px;
+}
+.send-btn{
+    width: 100px;
+    border: none;
+    background-color: var(--std_clr);
+    color: #fff;
+    font-size: 16px;
+    padding: 6px 0;
+    border-radius: 50px;
+}
+.close-contact{
+    display: none;
+}
+.open-contact{
+    display: flex;
+}
+.body{
+    overflow: hidden;
+}
+.fa-xmark::before{
+    font-size: 30px;
+}
+
 /*---------Break-points Design Start ------------*/
 
 
@@ -620,6 +725,12 @@ main{
     .foot-links-connect{
         flex-direction: column;
     }
+    .message-icon i{
+        font-size: 25px;
+    }
+    .message-icon span{
+        font-size: 18px;
+    }
 }
 @media screen and (max-width:326px) {
     .btn{
@@ -637,9 +748,7 @@ main{
     }
     .foot-links-connect ul{
         font-size: 11px;
-    }
-    
-    
+    }    
 }
 
 
