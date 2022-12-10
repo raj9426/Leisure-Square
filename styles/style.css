@@ -189,11 +189,11 @@ main{
     width: 100%;
     display: flex;
     flex-direction: column;
-    height: 600px;
+    height: 650px;
     justify-content: center;
     align-items: center;
     font-family: 'Work Sans', sans-serif;
-    padding: 100px 0;
+    padding: 60px 0 10px 0;
 
 }
 
@@ -482,7 +482,7 @@ main{
     top: 0;
     left: 0;
     width: 100%;
-    height: 110vh;
+    height: 100vh;
     /* display: flex; */
     display: none;
     justify-content: center;
